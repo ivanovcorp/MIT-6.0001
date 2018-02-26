@@ -1,6 +1,8 @@
 # variables
 from _ast import For
 from _operator import index
+from PythonLangExamples.MyPoint import MyPoint
+
 a = 5 # int
 print('This is int:',a)
 
@@ -165,3 +167,39 @@ del(grades['Tosho'])
 print('Deleted Tosho:', grades)
 print('All keys:', grades.keys())
 print('All keys:', grades.values())
+
+# exceptions
+
+try:
+    a = 6
+    b = 5
+    print(a/b)
+except:
+    print('Please enter numbers')
+    
+try:
+    a = 'f'
+    b = 5
+    print(a/b)
+except:
+    print('This is the exception.Please enter numbers')
+    
+# try:
+#     a = 'f'
+#     b = 5
+#     print(a/b)
+# except:
+#     raise Exception("This is custom exception")
+
+
+# assertion
+
+# def sum(a, b):
+#     sum = a + b
+#     assert sum < 100, 'Can\'t go over 100' 
+#     return sum
+# print(sum(50, 60))
+
+
+myOtherPoint = MyPoint(5, 15)
+print('This is mypoint printed via overrided tostring: ',myOtherPoint)

@@ -7,8 +7,7 @@ def rev_list_buggy(L):
     input: L, a list
     Modifies L such that its elements are in reverse order
     returns: nothing
-    """
-    temp = 0
+    """    
     for i in range(len(L)):
         j = len(L) - i
         L[i] = temp
